@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anele Nzimande - Contact Me</title>
+
+    <!-- Google Font - Zen Dots -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body style="background-color: #f8f9fa;"> <!-- Set your desired background color here -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo and Brand Name -->
+            <a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}">
+                <img src="{% static 'images/anracing.png' %}" alt="Logo" class="me-2" style="width: 150px;">
+                
+            </a>
+            <!-- Navbar Toggler (for mobile view) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'portfolio' %}">My Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sponsors' %}">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Email Section -->
+    <div class="email-section mt-4">
+        <p>For personal inquiries, please feel free to email me—and I’ll get back to you soon!</p>
+        <a href="mailto:anelenzimande710@gmail.com" class="btn btn-primary">Send Me an Email</a>
+    </div>
+</div>
+    
+
+    <!-- Call to Action Socials -->
+    <div class="follow-socials">
+        <h2>Follow My Socials</h2>
+    </div>
+
+    <!-- Squares Section -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Instagram Square -->
+            <div class="col-12 col-sm-4 social-box instagram" style="height: 200px;">
+                <a href="https://www.instagram.com/obviouslyanele?igsh=N3I2cXd5dHh3N29u&utm_source=qr">  
+                    <img src="{% static 'images/Instagram-logo.png' %}" width="100"> 
+                </a>
+            </div>
+            <!-- YouTube Square -->
+            <div class="col-12 col-sm-4 social-box youtube" style="height: 200px;">
+                <a href="https://youtube.com/@anel3?si=YApNHtbrw7BCNkJM">
+                    <img src="{% static 'images/youtube-logo.png' %}" width="100">
+                </a>
+            </div>
+            <!-- TikTok Square -->
+            <div class="col-12 col-sm-4 social-box tiktok" style="height: 200px;">
+                <a href="https://www.tiktok.com/@anelen50?_t=ZM-8t92lIWm3So&_r=1"> 
+                    <img src="{% static 'images/tiktok-logo.png' %}" width="100">  
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <h2>Find Me Here</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.4844054327315!2d30.5247325!3d-29.6965427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef694b506df88b5%3A0xa2e010447f4a17ea!2siDube%20Raceway!5e0!3m2!1sen!2sza!4v1706551234567" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    
+    
+<!-- Footer section -->
+<footer class="bg-dark text-white" style="padding: 20px 0; margin-top: 20px;">
+    <div class="container">
+        <!-- New Row for Navbar Links -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a class="text-white" href="{% url 'index' %}" style="font-size: 0.9rem;">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-white" href="{% url 'portfolio' %}" style="font-size: 0.9rem;">My Portfolio</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-white" href="{% url 'sponsors' %}" style="font-size: 0.9rem;">Partners</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-white" href="{% url 'contact' %}" style="font-size: 0.9rem;">Contact</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-white" href="{% url 'gallery' %}" style="font-size: 0.9rem;">Gallery</a>
+                    </li>  
+                    <li class="list-inline-item">
+                        <a class="text-white" href="{% url 'services' %}" style="font-size: 0.9rem;">Services</a>
+                    </li>                   
+                </ul>
+            </div>
+        </div>
+
+        
+        <!-- Existing Footer Content -->
+        <div class="row d-flex justify-content-between align-items-center">
+            <!-- Social Media Links -->
+            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <h5 style="font-size: 16px; margin-bottom: 10px;">Follow Me</h5>
+                <a href="https://www.instagram.com/obviouslyanele?igsh=N3I2cXd5dHh3N29u&utm_source=qr" 
+                   class="text-white me-3" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-instagram" style="font-size: 24px;"></i>
+                </a>
+                <a href="https://www.tiktok.com/@anelen50?_t=ZM-8t92lIWm3So&_r=1" 
+                   class="text-white me-3" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-tiktok" style="font-size: 24px;"></i>
+                </a>
+                <a href="https://youtube.com/@anel3?si=YApNHtbrw7BCNkJM" 
+                   class="text-white" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-youtube" style="font-size: 24px;"></i>
+                </a>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <p style="margin: 0; font-size: 0.9rem;">&copy; 2025 Anele Nzimande | All rights reserved</p>
+                <p style="margin: 0; font-size: 0.8rem;">
+                    <a href="{% url 'services' %}">Website by Anele</a>
+                </p>
+            </div>
+
+            <!-- Partner Section -->
+            <div class="col-md-4 text-center text-md-end">
+                <a href="{% url 'sponsors' %}" class="btn btn-outline-light btn-sm" 
+                   style="font-size: 14px; padding: 6px 12px;">Become a Partner</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Add Boxicons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+
+    <!-- Bootstrap JS & Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1376 @@
+/* General Reset and Body Styling */
+body {
+    font-family: 'Zen Dots', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #f7f8f9;
+    background-color: #f8f9fa;
+}
+
+/* Video Background Styling */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+    z-index: -1;
+}
+
+/* Navbar Styling */
+.navbar-brand span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+/* Image Placeholder Styling */
+.image-placeholder {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: 400px;
+    margin-top: -85px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    max-height: 800px;
+    object-fit: contain;
+}
+
+/* Text and Button Section Styling */
+.col-md-6.text-center.d-flex.justify-content-center.flex-column.align-items-center {
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.col-md-6.text-center.d-flex.justify-content-center.flex-column.align-items-center h2,
+.col-md-6.text-center.d-flex.justify-content-center.flex-column.align-items-center p {
+    color: white;
+    margin: 10px 0;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Row Spacing */
+.row {
+    margin: 20px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Carousel Styling */
+#raceCalendarCarousel {
+    background-color: #ffffff00;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+#raceCalendarCarousel .carousel-item {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#raceCalendarCarousel .carousel-item.active {
+    display: block;
+}
+
+#raceCalendarCarousel .carousel-inner {
+    text-align: center;
+    height: 100%;
+}
+
+#raceCalendarCarousel .carousel-inner p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fcfbfb;
+    margin: 0;
+    padding: 10px;
+}
+
+#raceCalendarCarousel .carousel-inner .carousel-item:nth-child(1) p {
+    color: #fdfcfc;
+}
+
+/* Carousel Control Icons Styling */
+#raceCalendarCarousel .carousel-control-prev-icon,
+#raceCalendarCarousel .carousel-control-next-icon {
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/*  ---------------- Portfolio Page starts here ----------------- */
+
+.about-me-section {
+    padding: 20px 0;
+    background-color: #f9f9fc;
+}
+
+.about-me-section .btn-stats-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-me-section .btn-stats {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+    width: 90%;
+    max-width: 800px;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.about-me-section .btn-stats:hover {
+    background: #0056b3;
+}
+
+.about-me-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-me-section .header h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-me-section .header .flag {
+    width: 30px;
+    height: auto;
+}
+
+.about-me-section .header .tagline {
+    font-size: 18px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.about-me-section .about-overview {
+    margin-bottom: 30px;
+}
+
+.about-me-section .about-overview h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.about-me-section .about-overview p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-me-section .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-me-section .info-card {
+    flex: 1 1 250px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-me-section .info-card h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.about-me-section .info-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #555;
+}
+
+.about-me-section .info-card ul li {
+    margin: 5px 0;
+}
+
+.about-me-section .info-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styles */
+.footer {
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.icon-link {
+    color: white; /* Ensures consistent color */
+    text-decoration: none; /* Removes underline */
+    margin-right: 15px; /* Spacing between icons */
+    font-size: 36px; /* Increased icon size */
+    vertical-align: middle; /* Aligns icons vertically */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.icon-link:hover {
+    color: #f39c12; /* Optional hover color effect */
+}
+
+.website-link {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Ensures consistent color */
+    font-size: 0.9rem;
+}
+
+.website-link:hover {
+    color: #f39c12; /* Optional hover effect for the link */
+}
+
+/* Blue text for "Website by Anele" link */
+.text-blue {
+    color: blue;
+}
+
+.text-blue:hover {
+    text-decoration: underline; /* Optional hover effect */
+}
+
+
+/* -------------------- Stats card ---------------------- css */
+
+/* Scoped styles for the racing-stats section */
+.racing-stats {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Move the card closer to the top */
+    min-height: 90vh; /* Prevent footer overlap on smaller screens */
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    padding: 10px; /* Add padding for mobile view */
+}
+
+.racing-stats .stats-card {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+    margin: 50px auto; /* Center the card on the page */
+    min-height: 600px; /* Increased height for a taller card */
+}
+
+.racing-stats .stats-card h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Tabs Styling */
+.racing-stats .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.racing-stats .tab-button {
+    padding: 10px 20px;
+    border: none;
+    background: #ddd;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.racing-stats .tab-button.active {
+    background: #333;
+    color: #fff;
+}
+
+.racing-stats .tab-button:hover {
+    background: #bbb;
+    color: #fff;
+}
+
+/* Tab Content */
+.racing-stats .tab-content {
+    margin-top: 20px;
+}
+
+.racing-stats #season-2025 p {
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Stats container and grid */
+.racing-stats .stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.racing-stats .stat-item {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.racing-stats .stat-label {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.racing-stats .stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Highlight Box Styling */
+.racing-stats .highlight-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #e90c0c, #3d03a1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff; /* Change to white for better contrast */
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .racing-stats {
+        margin-top: 0; /* Prevent unnecessary spacing */
+        padding: 10px 5px;
+    }
+
+    .racing-stats .stats-card {
+        width: 90%; /* Ensure card fits smaller screens */
+    }
+
+    .racing-stats .stat-item {
+        padding: 10px;
+    }
+
+    .racing-stats .tab-button {
+        font-size: 0.9rem; /* Adjust button text size */
+        margin: 0 5px;
+    }
+}
+
+
+/* ---------------- INFORMATION TAB --------------- */
+
+/* Info Popover Styling */
+.info-popover {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .info-icon {
+    font-size: 24px; /* Size of the information icon */
+    color: #333;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .info-icon:hover {
+    color: #555;
+  }
+  
+  /* Info Popover Content Styling */
+  .info-popover-content {
+    display: none;
+    position: absolute;
+    top: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px; /* Minimum width for proper display */
+    max-width: 350px; /* Limit maximum width for larger screens */
+    font-size: 14px;
+    z-index: 10;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center transform */
+    max-height: 400px; /* Limit height for overflow */
+    overflow-y: auto; /* Add vertical scrolling for overflow content */
+    box-sizing: border-box; /* Ensure padding is included in dimensions */
+    word-wrap: break-word; /* Wrap text properly */
+  }
+  
+  /* Show popover on hover */
+  .info-popover:hover .info-popover-content {
+    display: block;
+  }
+  
+  .info-popover-content h3 {
+    margin-bottom: 10px;
+  }
+  
+  .info-popover-content div {
+    margin-bottom: 5px;
+  }
+  
+  /* Header Styling for Stats Card */
+  .stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Adjusting the layout on mobile */
+  @media screen and (max-width: 768px) {
+    .stats-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .info-popover {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    /* Adjust the popover for mobile */
+    .info-popover-content {
+      max-width: 90%; /* Ensure the popover stays within the viewport */
+      min-width: auto; /* Adjust min-width for smaller screens */
+      padding: 20px;
+      font-size: 16px; /* Slightly larger font for readability */
+      top: 10px; /* Position closer to the icon */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Center the popover */
+      max-height: 300px; /* Limit height on mobile */
+      overflow-y: auto; /* Enable scrolling for overflow content */
+      word-wrap: break-word; /* Ensure text wraps properly */
+    }
+  }
+  
+  /* Force popover to adjust dynamically for very small screens */
+  @media screen and (max-width: 500px) {
+    .info-popover-content {
+      width: 90%; /* Fit within smaller screens */
+      left: 5%; /* Add slight margin from edges */
+      transform: none; /* Remove center alignment on very small screens */
+      max-height: 250px; /* Further reduce height for compactness */
+      padding: 15px; /* Adjust padding for small devices */
+    }
+  }
+  
+  /* Styling for the content */
+  .info-popover-content h3 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .info-popover-content div {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .info-popover-footer {
+    font-size: 12px;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+
+/* Container for the title and info icon, keep them aligned */
+.stats-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+  
+  .stats-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .info-popover {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .info-icon {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .info-icon:hover {
+    color: #555;
+  }
+  
+  /* Popover content: position it on top of the page */
+  .info-popover-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Occupy most of the screen width */
+    max-width: 600px; /* Max width to prevent stretching too much */
+    max-height: 80vh; /* Set max height to 80% of the viewport height */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    z-index: 9999; /* Ensure it appears above everything else */
+    word-wrap: break-word;
+    box-sizing: border-box;
+  }
+  
+  /* Show popover on hover */
+  .info-popover:hover .info-popover-content {
+    display: block;
+  }
+  
+  /* Mobile adjustments */
+  @media screen and (max-width: 768px) {
+    .info-popover-content {
+      width: 90%; /* Popover should take up more width on smaller screens */
+      max-width: 90%; /* Prevent exceeding screen width */
+      padding: 15px;
+      font-size: 16px;
+      max-height: 80vh; /* Max height based on viewport */
+      overflow-y: auto; /* Vertical scrolling when needed */
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .info-popover-content {
+      width: 95%; /* Even larger width for the smallest screens */
+      font-size: 14px;
+      max-height: 70vh; /* Further limit height on small screens */
+    }
+  }
+
+
+/* ------------ Sponsors -------------- */
+
+/* Success/Failure message */
+
+
+.messages {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px; /* Make the text more readable */
+    display: inline-block; /* Keeps it compact */
+    width: fit-content;
+    margin: auto;
+}
+
+.message.success {
+    background-color: #28a745; /* Darker green */
+    color: white;
+}
+
+.message.error {
+    background-color: #dc3545; /* Darker red */
+    color: white;
+}
+
+
+
+.sponsors-section {
+    padding: 40px 0;
+    background-color: #f9f9fc;
+}
+
+.sponsors-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between logo and contact section */
+}
+
+.logo-section {
+    flex: 1;
+    text-align: center;
+}
+
+.static-logo {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Large logo size for desktop */
+}
+
+.contact-section {
+    flex: 1;
+    text-align: left;
+}
+
+.tagline {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.btn-contact {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    
+}
+
+.btn-contact:hover {
+    background: #0056b3;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack logo and contact section vertically */
+        gap: 20px; /* Reduce gap for mobile */
+    }
+
+    .logo-section {
+        margin-bottom: 20px; /* Add space below the logo */
+    }
+
+    .static-logo {
+        width: 100px; /* Smaller logo size for mobile */
+    }
+
+    .contact-section {
+        text-align: center; /* Center-align text for mobile */
+    }
+
+    .tagline {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .contact-text {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .btn-contact {
+        width: 100%; /* Full-width button for mobile */
+    }
+}
+
+
+/* Sponsor Carousel Styling */
+
+/* Add space after the contact form */
+.spacer {
+    padding: 40px 0; /* Adjust padding as needed */
+}
+
+/* Style for the Heading */
+#partnersHeading {
+    color: #020202; /* Set the desired color, e.g., Tomato */
+}
+
+/* Sponsor Carousel Styling */
+/* Base Styles (Desktop View) */
+/* Sponsor Carousel Styling */
+#sponsorCarousel {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(94, 91, 91);
+    padding: 20px 0;
+    margin-top: 20px; /* Space above the carousel */
+    width: 100%; /* Ensure carousel takes full width */
+}
+
+#sponsorCarousel .carousel-item {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#sponsorCarousel .carousel-item.active {
+    display: block;
+}
+
+#sponsorCarousel .carousel-inner {
+    text-align: center;
+    height: 100%;
+}
+
+#sponsorCarousel .carousel-inner p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #4d4c4c;
+    margin: 0;
+    padding: 10px;
+}
+
+#sponsorCarousel .sponsor-logo {
+    max-width: 150px; /* Adjust logo size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Carousel Control Icons Styling */
+#sponsorCarousel .carousel-control-prev-icon,
+#sponsorCarousel .carousel-control-next-icon {
+    background-color: transparent; /* Transparent background */
+    background-size: 20px 20px; /* Size the arrow icon */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Left arrow: change to black */
+#sponsorCarousel .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.354a.5.5 0 0 1 0 .707L6.207 7.5l5.147 5.146a.5.5 0 0 1-.708.708l-5.5-5.5a.5.5 0 0 1 0-.708l5.5-5.5a.5.5 0 0 1 .707 0z'/%3E%3C/svg%3E");
+}
+
+/* Right arrow: change to black */
+#sponsorCarousel .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.354a.5.5 0 0 1 .708 0l5.5 5.5a.5.5 0 0 1 0 .708l-5.5 5.5a.5.5 0 0 1-.708-.708L9.793 8 4.646 2.854a.5.5 0 0 1 0-.707z'/%3E%3C/svg%3E");
+}
+
+#sponsorCarousel .carousel-control-prev,
+#sponsorCarousel .carousel-control-next {
+    width: 5%;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    #sponsorCarousel {
+        padding: 15px 0;
+        margin-top: 10px; /* Reduce margin */
+    }
+
+    #sponsorCarousel .carousel-inner p {
+        font-size: 0.8rem; /* Smaller text for mobile */
+        padding: 8px;
+    }
+
+    #sponsorCarousel .sponsor-logo {
+        max-width: 100px; /* Reduce logo size */
+        height: auto;
+    }
+
+    #sponsorCarousel .carousel-control-prev,
+    #sponsorCarousel .carousel-control-next {
+        width: 8%; /* Slightly reduce control button size */
+    }
+
+    #sponsorCarousel .carousel-control-prev-icon,
+    #sponsorCarousel .carousel-control-next-icon {
+        background-size: 14px 14px; /* Smaller arrows */
+    }
+}
+
+@media (max-width: 480px) {
+    #sponsorCarousel {
+        border-radius: 5px; /* Adjust border-radius for very small screens */
+        padding: 10px 0;
+    }
+
+    #sponsorCarousel .carousel-inner p {
+        font-size: 0.7rem; /* Smaller text for extra small screens */
+    }
+
+    #sponsorCarousel .sponsor-logo {
+        max-width: 80px; /* Further reduce logo size for small screens */
+    }
+
+    #sponsorCarousel .carousel-control-prev,
+    #sponsorCarousel .carousel-control-next {
+        width: 10%; /* Maintain larger touch area for very small devices */
+    }
+
+    #sponsorCarousel .carousel-control-prev-icon,
+    #sponsorCarousel .carousel-control-next-icon {
+        background-size: 12px 12px; /* Smaller arrows for extra small screens */
+    }
+}
+
+
+
+/* ------------ Contact Page ---------- */
+
+/* Base styles for the social media squares */
+.social-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Instagram Gradient */
+.instagram {
+    background: linear-gradient(45deg, #f58529, #f77737, #feda77, #d93f3d, #bc2a8d);
+    background-size: 400% 400%;
+    animation: instagram-gradient 4s ease infinite;
+}
+
+/* YouTube */
+.youtube {
+    background-color: #FF0000;  /* YouTube's brand color */
+}
+
+/* TikTok */
+.tiktok {
+    background-color: #010002;  /* TikTok's brand color */
+}
+
+/* Instagram Gradient Animation */
+@keyframes instagram-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* ------- Call to Action (Socials) ------- */
+
+
+/* Styling for the Follow My Socials text */
+.follow-socials {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust this to control the space between the text and the social media boxes */
+}
+
+.follow-socials h2 {
+    font-family: 'Zen Dots', sans-serif; /* Use the same font as your social media boxes for consistency */
+    font-size: 2rem; /* Adjust the size of the text */
+    color: #333; /* Set the text color */
+    text-transform: uppercase; /* Capitalize the text */
+    letter-spacing: 2px; /* Adds spacing between letters for a clean look */
+    margin: 0;
+}
+/* ----------------- YouTube Gradient Background ----------------- */
+.youtube {
+    background: linear-gradient(45deg, #FF0000, #ffffff); /* YouTube Red and White Gradient */
+    background-size: 400% 400%;
+    animation: youtube-gradient 6s ease infinite, youtube-pulse 2s ease-in-out infinite;
+}
+
+/* YouTube Gradient Animation */
+@keyframes youtube-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+/* ----------------- TikTok Gradient Background ----------------- */
+.tiktok {
+    background: linear-gradient(45deg, #010002, #fe2c55, #00f2ea); /* TikTok Pink & Turquoise Gradient */
+    background-size: 400% 400%;
+    animation: tiktok-gradient 5s ease infinite;
+}
+
+/* TikTok Gradient Animation */
+@keyframes tiktok-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ----------------- Instagram Gradient Background ----------------- */
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #9425d1, #517fa4); /* Instagram Gradient */
+    background-size: 400% 400%;
+    animation: instagram-gradient 6s ease infinite;
+}
+
+/* Instagram Gradient Animation */
+@keyframes instagram-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Base styles for the social media squares */
+.social-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; /* Space between boxes on mobile */
+}
+
+/* Instagram Gradient */
+.instagram {
+    background: linear-gradient(45deg, #f58529, #f77737, #feda77, #d93f3d, #bc2a8d);
+    background-size: 400% 400%;
+    animation: instagram-gradient 4s ease infinite;
+}
+
+/* YouTube Gradient */
+.youtube {
+    background: linear-gradient(45deg, #FF0000, #ffffff); /* YouTube Red and White Gradient */
+    background-size: 400% 400%;
+    animation: youtube-gradient 6s ease infinite;
+}
+
+/* TikTok Gradient */
+.tiktok {
+    background: linear-gradient(45deg, #010002, #fe2c55, #00f2ea); /* TikTok Pink & Turquoise Gradient */
+    background-size: 400% 400%;
+    animation: tiktok-gradient 5s ease infinite;
+}
+
+/* Instagram Gradient Animation */
+@keyframes instagram-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* YouTube Gradient Animation */
+@keyframes youtube-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* TikTok Gradient Animation */
+@keyframes tiktok-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Adjust for mobile devices */
+@media (max-width: 767px) {
+    .social-box {
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    /* Optional: reduce image size on mobile */
+    .social-box img {
+        width: 95px; /* Adjust the image size on mobile */
+    }
+
+    /* Stack the boxes vertically */
+    .col-12 {
+        flex: 0 0 100%; /* Ensure each box takes full width */
+        max-width: 100%;
+    }
+}
+
+/* Optional: Styling for the Follow My Socials text */
+.follow-socials {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust this to control the space between the text and the social media boxes */
+}
+
+.follow-socials h2 {
+    font-family: 'Zen Dots', sans-serif; /* Use the same font as your social media boxes for consistency */
+    font-size: 2rem; /* Adjust the size of the text */
+    color: #333; /* Set the text color */
+    text-transform: uppercase; /* Capitalize the text */
+    letter-spacing: 2px; /* Adds spacing between letters for a clean look */
+    margin: 0;
+}
+
+
+/* ------------- Find me Here ------------- */
+
+.container.mt-4 h2 {
+    color: black; /* Ensure the text is visible */
+    margin-bottom: 10px; /* Add space below the heading */
+    text-align: center; /* Optional: Align the text to the center */
+}
+
+/* ------------- Personal Enquries Email ------------- */
+/* ------------- Personal Enquiries Email ------------- */
+.email-section {
+    text-align: center; /* Centers the email section */
+    margin-top: 20px; /* Adds space above the email section */
+}
+
+.email-section p {
+    font-size: 1.2rem; /* Default font size for larger screens */
+    color: black;
+    margin-bottom: 15px;
+}
+
+.email-section .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap's primary color */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.email-section .btn:hover {
+    background-color: #0056b3; /* Darker shade when hovered */
+}
+
+/* ------------- Mobile Responsive Styles ------------- */
+@media (max-width: 767.98px) {
+    .email-section p {
+        font-size: 1rem; /* Smaller font size for mobile devices */
+    }
+
+    .email-section .btn {
+        font-size: 0.7rem; /* Optional: Adjust button font size for mobile */
+        padding: 8px 16px; /* Optional: Adjust button padding for mobile */
+    }
+}
+
+
+/* ------------- Services Page  ------------- */
+
+.card h3, 
+.card p {
+    color: rgb(0, 0, 0) !important;
+}
+
+
+
+/* ------------- Gallery Section  ------------- */
+.gallery-section h2 {
+    color: rgb(0, 0, 0); /* Change this to any color that contrasts with your background */
+    text-align: center; /* Centers the text */
+    font-size: 24px; /* Adjust the font size if needed */
+}
+
+.gallery-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* ------------- Album Section  ------------- */
+
+/* General Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    margin: 0;
+}
+
+.container {
+    flex: 1; /* Allow the container to grow and push the footer down */
+    padding: 20px;
+}
+
+/* Album Cards Styling */
+#album-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.album-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding */
+    width: 300px; /* Larger card */
+    height: 200px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.album-card h3 {
+    margin: 0;
+    font-size: 2rem; /* Larger font size */
+    font-weight: bold;
+    color: black; /* Black text */
+    text-align: center;
+}
+
+/* Album Buttons Styling */
+#album-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.album-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.album-button:hover {
+    background-color: #0056b3;
+}
+
+/* Gallery Container Styling */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Loading Message Styling */
+#gallery p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 0;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+}
